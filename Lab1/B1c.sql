@@ -1,5 +1,6 @@
 DELIMITER //
 
+
 CREATE PROCEDURE get_average_rating(
     IN product_id INT,
     OUT average_rating DECIMAL(10, 2)
@@ -15,3 +16,5 @@ DELIMITER ;
 
 CALL get_average_rating(5, @result);
 SELECT @result AS average_rating;
+
+-- use kids_shop;
